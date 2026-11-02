@@ -1,0 +1,13 @@
+[global]
+developmentMode = false
+[logger]
+level = "warning"
+[theme]
+primaryColor = "#00A991"
+backgroundColor = "#F5F7FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#172B43"
+font = "sans serif"
+[server]
+headless = true
+runOnSave = true

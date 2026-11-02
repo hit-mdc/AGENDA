@@ -1,0 +1,32 @@
+{
+  "artifacts": "artifacts",
+  "batch_size": 4096,
+  "cardinality": 8,
+  "datasets": [
+    {
+      "id": "collection",
+      "name": "Your collection",
+      "data": {"path": "data/series.npy", "format": "npy"},
+      "queries": {"path": "data/query_ids.npy", "kind": "ids"}
+    }
+  ],
+  "methods": [
+    {
+      "id": "encoder",
+      "name": "Your DSA method",
+      "group": "Data-adaptive",
+      "description": "Registered series approximation method",
+      "dimensions": 16,
+      "factory": "adapters.encoder:EncoderAdapter",
+      "options": {}
+    }
+  ],
+  "indexes": [
+    {
+      "id": "search_index",
+      "name": "Your D3S index",
+      "factory": "adapters.search_index:SearchIndexAdapter",
+      "options": {}
+    }
+  ]
+}
